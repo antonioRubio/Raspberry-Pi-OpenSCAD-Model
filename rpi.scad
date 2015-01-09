@@ -3,6 +3,7 @@ use <pin_headers.scad>;
 WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
+RIGHT = [90, 0, 0];
 
 METALLIC = "silver";
 CHROME = [.9,.9,.9];
