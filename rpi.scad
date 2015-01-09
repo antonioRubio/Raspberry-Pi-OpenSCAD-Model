@@ -1,10 +1,11 @@
 use <pin_headers.scad>;
 
-WIDTH = 56;
+width = 56;
 length = 85;
 height = 1.5;
 
 WIDTH = 56;
+LENGTH = 
 
 module ethernet ()
 	{
