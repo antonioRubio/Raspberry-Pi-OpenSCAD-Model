@@ -6,6 +6,8 @@ HEIGHT = 1.5;
 
 METALLIC = "silver";
 
+function dimensions() = [PORT_LENGTH, PORT_WIDTH, PORT_HEIGHT];
+
 module ethernet_port ()
 	{
 	PORT_LENGTH = 21.2;
