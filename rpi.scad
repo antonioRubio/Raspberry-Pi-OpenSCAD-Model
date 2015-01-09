@@ -4,6 +4,7 @@ WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
 RIGHT = [90, 0, 0];
+LEFT = [-90, 0, 0];
 
 FINE = .5;
 
@@ -73,7 +74,7 @@ module audio_jack ()
 		color(BLUE)
 			cube([12.1,11.5,10.1]);
 				translate([6,11.5,10.1-(6.7/2)])
-					rotate([-90,0,0])
+					rotate(LEFT)
 						color(BLUE)
 							cylinder(h = 3.5, r = 6.7/2, $fs=FINE);
 		}
