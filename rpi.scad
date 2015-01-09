@@ -8,7 +8,7 @@ METALLIC = "silver";
 
 module ethernet_port ()
 	{
-	color("silver")
+	color(METALLIC)
 	translate([LENGTH-20,1.5,HEIGHT]) cube([21.2,16,13.3]); 
 	}
 
