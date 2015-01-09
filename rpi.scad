@@ -74,6 +74,7 @@ module audio_jack ()
 	diameter = 6.7;
 	radius = radius(diameter);
 	block_width = 11.5;
+	block_height = 10.1;
 	translate([LENGTH-26, WIDTH - block_width, HEIGHT])
 		{
 		color(BLUE)
