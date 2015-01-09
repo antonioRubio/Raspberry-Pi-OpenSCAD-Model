@@ -8,7 +8,7 @@ METALLIC = "silver";
 
 module ethernet_port ()
 	{
-	offset = [LENGTH - 10, 1.5, HEIGHT];
+	offset = [LENGTH - 20, 1.5, HEIGHT];
 	dimensions = [21.2, 16, 13.3];
 
 	color(METALLIC)
