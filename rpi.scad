@@ -4,6 +4,7 @@ width = 56;
 length = 85;
 height = 1.5;
 
+WIDTH = 56;
 
 module ethernet ()
 	{
@@ -22,7 +23,7 @@ module usb ()
 module composite ()
 	{
 	//composite port
-	translate([length-43.6,width-12,height])
+	translate([length-43.6,WIDTH-12,height])
 		{
 		color("yellow")
 		cube([10,10,13]);
