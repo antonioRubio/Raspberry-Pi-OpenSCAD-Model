@@ -43,10 +43,10 @@ module composite_port ()
 		color("yellow")
 			cube([10,10,13]);
 
-		//translate([5,19,8])
-			//rotate([90,0,0])
-				//color([.9,.9,.9])
-					//cylinder(h = 9.3, r = 4.15, $fs=.5);
+		translate([5,19,8])
+			rotate([90,0,0])
+				color([.9,.9,.9])
+					cylinder(h = 9.3, r = 4.15, $fs=.5);
 		}
 	}
 
