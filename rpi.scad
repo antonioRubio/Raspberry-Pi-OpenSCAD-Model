@@ -81,7 +81,7 @@ module audio_jack ()
 	block_dimensions = [block_length, block_width, block_height];
 
 	offset_x = 59;
-	offset = [offset_x, WIDTH - block_width, HEIGHT];
+	offset = [59, WIDTH - block_width, HEIGHT];
 
 	offset_for_jack = [half(block_length), block_width, block_height - radius];
 	
