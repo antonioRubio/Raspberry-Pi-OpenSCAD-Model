@@ -28,8 +28,9 @@ module ethernet_port ()
 
 module usb_port ()
 	{
+	offset_x = LENGTH - 9.5;
 	color(METALLIC)
-		translate([LENGTH-9.5, 25, HEIGHT]) 
+		translate([offset_x, 25, HEIGHT]) 
 			cube(USB_DIMENSIONS);
 	}
 
