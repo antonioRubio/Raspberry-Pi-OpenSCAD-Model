@@ -19,7 +19,7 @@ module ethernet_port ()
 	ledge = 1.2;
 	offset_x = LENGTH - PORT_LENGTH + ledge;
 	pcb_margin = 1.5;
-	offset = [offset_x, pcb_margin, HEIGHT];
+	offset = [offset_x(ledge), pcb_margin, HEIGHT];
 
 	color(METALLIC)
 		translate(offset)
