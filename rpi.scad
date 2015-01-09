@@ -67,7 +67,6 @@ module composite_port ()
 
 module audio_jack ()
 	{
-	fine = .5;
 	translate([LENGTH-26,WIDTH-11.5,HEIGHT])
 		{
 		color([.4,.4,.95])
