@@ -95,14 +95,12 @@ module audio_connector() {
 
 module audio_jack ()
 	{
-	
 	offset = [59, 44.5, HEIGHT];
 
 	translate(offset)
 		{
 		audio_block();	
-		audio_connector();
-					
+		audio_connector();		
 		}
 	}
 
