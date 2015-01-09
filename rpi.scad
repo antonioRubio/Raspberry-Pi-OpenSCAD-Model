@@ -74,7 +74,7 @@ module audio_jack ()
 	diameter = 6.7;
 	radius = radius(diameter);
 
-	block_length = 6;
+	block_length = 12.1;
 	block_width = 11.5;
 	block_height = 10.1;
 
