@@ -11,20 +11,20 @@ module ethernet ()
 	{
 	//ethernet port
 	color("silver")
-	translate([length-20,1.5,height]) cube([21.2,16,13.3]); 
+	translate([LENGTH-20,1.5,height]) cube([21.2,16,13.3]); 
 	}
 
 module usb ()
 	{
 	//usb port
 	color("silver")
-	translate([length-9.5,25,height]) cube([17.3,13.3,16]);
+	translate([LENGTH-9.5,25,height]) cube([17.3,13.3,16]);
 	}
 
 module composite ()
 	{
 	//composite port
-	translate([length-43.6,WIDTH-12,height])
+	translate([LENGTH-43.6,WIDTH-12,height])
 		{
 		color("yellow")
 		cube([10,10,13]);
@@ -39,7 +39,7 @@ module composite ()
 module audio ()
 	{
 	//audio jack
-	translate([length-26,WIDTH-11.5,height])
+	translate([LENGTH-26,WIDTH-11.5,height])
 		{
 		color([.4,.4,.95])
 		cube([12.1,11.5,10.1]);
@@ -95,9 +95,9 @@ module pcb ()
 		{
 		color([0.2,0.5,0])
 		linear_extrude(height = height)
-		square([length,WIDTH]); //pcb
+		square([LENGTH,WIDTH]); //pcb
 		translate ([25.5, 18,-0.1]) mhole (); 
-		translate ([length-5, WIDTH-12.5, -0.1]) mhole (); 
+		translate ([LENGTH-5, WIDTH-12.5, -0.1]) mhole (); 
 		}
 	}
 
@@ -105,20 +105,20 @@ module leds()
 	{
 		// act
 		color([0.9,0.1,0,0.6])
-		translate([length-11.5,WIDTH-7.55,height]) led();
+		translate([LENGTH-11.5,WIDTH-7.55,height]) led();
 		// pwr
 		color([0.9,0.1,0,0.6])
-		translate([length-9.45,WIDTH-7.55,height]) led();
+		translate([LENGTH-9.45,WIDTH-7.55,height]) led();
 
 		// fdx
 		color([0.9,0.1,0,0.6])
-		translate([length-6.55,WIDTH-7.55,height]) led();
+		translate([LENGTH-6.55,WIDTH-7.55,height]) led();
 		// lnk
 		color([0.9,0.1,0,0.6])
-		translate([length-4.5,WIDTH-7.55,height]) led();
+		translate([LENGTH-4.5,WIDTH-7.55,height]) led();
 		// 100
 		color([0.9,0.1,0,0.6])
-		translate([length-2.45,WIDTH-7.55,height]) led();
+		translate([LENGTH-2.45,WIDTH-7.55,height]) led();
 	}
 module led()
 	{
