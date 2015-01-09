@@ -74,7 +74,7 @@ module audio_jack ()
 			cube([12.1,11.5,10.1]);
 				translate([6,11.5,10.1-(6.7/2)])
 					rotate([-90,0,0])
-						color([.4,.4,.95])
+						color(BLUE)
 							cylinder(h = 3.5, r = 6.7/2, $fs=FINE);
 		}
 	}
