@@ -80,7 +80,7 @@ module audio_jack ()
 		{
 		color(BLUE)
 			cube([12.1, block_width, block_height]);
-				translate([6, block_width, 10.1 - radius])
+				translate([6, block_width, block_height - radius])
 					rotate(LEFT)
 						color(BLUE)
 							cylinder(h = 3.5, r = radius, $fs=FINE);
