@@ -23,7 +23,7 @@ module usb ()
 module composite ()
 	{
 	//composite port
-	translate([length-43.6,7-12,height])
+	translate([length-43.6,WIDTH-12,height])
 		{
 		color("yellow")
 		cube([10,10,13]);
