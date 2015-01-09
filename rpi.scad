@@ -5,6 +5,8 @@ LENGTH = 85;
 HEIGHT = 1.5;
 RIGHT = [90, 0, 0];
 
+FINE = .5;
+
 METALLIC = "silver";
 CHROME = [.9,.9,.9];
 
@@ -49,7 +51,7 @@ module composite_jack () {
 	translate([5,19,8])
 			rotate(RIGHT)
 				color(CHROME)
-					cylinder(h = 9.3, r = 4.15, $fs=fine);
+					cylinder(h = 9.3, r = 4.15, $fs=FINE);
 }
 
 module composite_port ()
