@@ -94,7 +94,6 @@ module audio_jack ()
 	block_length = 12.1;
 	block_width = 11.5;
 	block_height = 10.1;
-	block_dimensions = [block_length, block_width, block_height];
 
 	offset = [59, WIDTH - block_width, HEIGHT];
 	offset_for_jack = [half(block_length), block_width, block_height - radius];
