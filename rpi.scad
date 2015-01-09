@@ -10,7 +10,7 @@ module ethernet_port ()
 	{
 	PORT_WIDTH = 21.2;
 	offset = [LENGTH - 20, 1.5, HEIGHT];
-	dimensions = [21.2, 16, 13.3];
+	dimensions = [PORT_WIDTH, 16, 13.3];
 
 	color(METALLIC)
 		translate(offset)
