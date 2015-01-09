@@ -81,9 +81,16 @@ module audio_block() {
 }
 
 module audio_connector(radius) {
-	rotate(LEFT)
-		color(BLUE)
-			cylinder(h = 3.5, r = radius, $fs=FINE);
+	block_length = 12.1;
+	block_width = 11.5;
+	block_height = 10.1;
+	diameter = 6.7;
+	radius = radius(diameter);
+	offset_for_jack = [half(block_length), block_width, block_height - radius];
+	translate(offset_for_jack)
+		rotate(LEFT)
+			color(BLUE)
+				cylinder(h = 3.5, r = radius, $fs=FINE);
 }
 
 module audio_jack ()
@@ -100,7 +107,7 @@ module audio_jack ()
 	
 	translate(offset)
 		{
-		translate(offset_for_jack)
+
 					audio_connector(radius);
 		audio_block();
 				
