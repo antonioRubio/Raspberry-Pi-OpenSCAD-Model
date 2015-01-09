@@ -14,9 +14,6 @@ function dimensions() = [PORT_LENGTH, PORT_WIDTH, PORT_HEIGHT];
 
 module ethernet_port ()
 	{
-	
-	dimensions = dimensions();
-
 	ledge = 1.2;
 	offset_x = LENGTH - PORT_LENGTH + ledge;
 	pcb_margin = 1.5;
