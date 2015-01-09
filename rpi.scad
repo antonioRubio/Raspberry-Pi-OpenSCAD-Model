@@ -173,7 +173,7 @@ module rpi ()
 		ethernet_port ();
 		usb_port (); 
 		composite_port (); 
-		audio (); 
+		audio_jack (); 
 		gpio (); 
 		hdmi ();
 		power ();
