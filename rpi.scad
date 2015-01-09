@@ -32,7 +32,6 @@ module ethernet_port ()
 module usb_port ()
 	{
 	ledge = 8.5;
-	offset_x = LENGTH - USB_LENGTH + ledge;
 
 	color(METALLIC)
 		translate([new_offset_x(ledge, USB_LENGTH), 25, HEIGHT]) 
