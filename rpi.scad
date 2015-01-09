@@ -31,13 +31,6 @@ module usb_port ()
 	translate([LENGTH-9.5,25,HEIGHT]) cube([17.3,13.3,16]);
 	}
 
-module usb ()
-	{
-	//usb port
-	color("silver")
-	translate([LENGTH-9.5,25,HEIGHT]) cube([17.3,13.3,16]);
-	}
-
 module composite ()
 	{
 	//composite port
