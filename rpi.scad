@@ -11,13 +11,6 @@ module ethernet_port ()
 	translate([LENGTH-20,1.5,HEIGHT]) cube([21.2,16,13.3]); 
 	}
 
-module ethernet ()
-	{
-	//ethernet port
-	color("silver")
-	translate([LENGTH-20,1.5,HEIGHT]) cube([21.2,16,13.3]); 
-	}
-
 module usb ()
 	{
 	//usb port
