@@ -29,7 +29,7 @@ module ethernet_port ()
 module usb_port ()
 	{
 	color(METALLIC)
-		translate([LENGTH-9.5, 45, HEIGHT]) 
+		translate([LENGTH-9.5, 25, HEIGHT]) 
 			cube(USB_DIMENSIONS);
 	}
 
