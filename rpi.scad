@@ -45,8 +45,7 @@ module composite_port ()
 	{
 	translate([LENGTH-43.6,WIDTH-12,HEIGHT])
 		{
-		color("yellow")
-			cube([10,10,13]);
+		composite_block();
 
 		translate([5,19,8])
 			rotate([90,0,0])
