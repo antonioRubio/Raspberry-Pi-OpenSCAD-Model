@@ -91,10 +91,7 @@ module audio_jack ()
 							cylinder(h = 3.5, r = radius, $fs=FINE);
 		color(BLUE)
 			cube(block_dimensions);
-				translate(offset_for_jack)
-					rotate(LEFT)
-						color(BLUE)
-							cylinder(h = 3.5, r = radius, $fs=FINE);
+				
 		}
 	}
 
