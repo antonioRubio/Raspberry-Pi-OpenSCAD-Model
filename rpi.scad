@@ -11,6 +11,8 @@ ETHERNET_WIDTH = 16;
 ETHERNET_HEIGHT = 13.3;
 ETHERNET_DIMENSIONS = [ETHERNET_LENGTH, ETHERNET_WIDTH, ETHERNET_HEIGHT];
 
+USB_DIMENSION = [17.3, 13.3, 16];
+
 function offset_x(ledge) = LENGTH - ETHERNET_LENGTH + ledge;
 
 module ethernet_port ()
@@ -26,6 +28,7 @@ module ethernet_port ()
 
 module usb_port ()
 	{
+	
 	color(METALLIC)
 		translate([LENGTH-9.5,25,HEIGHT]) 
 			cube([17.3,13.3,16]);
