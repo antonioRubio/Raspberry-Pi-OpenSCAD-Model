@@ -95,16 +95,9 @@ module audio_connector(radius) {
 
 module audio_jack ()
 	{
-	diameter = 6.7;
-	radius = radius(diameter);
-
-	block_length = 12.1;
-	block_width = 11.5;
-	block_height = 10.1;
 
 	offset = [59, WIDTH - block_width, HEIGHT];
-	offset_for_jack = [half(block_length), block_width, block_height - radius];
-	
+
 	translate(offset)
 		{
 		audio_connector(radius);
