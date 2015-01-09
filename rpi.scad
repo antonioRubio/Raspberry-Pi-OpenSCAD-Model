@@ -67,8 +67,9 @@ module composite_port ()
 		}
 	}
 
-function radius(diameter) = diameter / 2;
 function half(dimension) = dimension / 2;
+function radius(diameter) = diameter / 2;
+
 
 module audio_jack ()
 	{
