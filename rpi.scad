@@ -41,7 +41,7 @@ module ethernet_port() {
 	color(METALLIC)
 		translate(offset)
 			cube(ETHERNET_DIMENSIONS);
-	}
+}
 
 module usb_port() {
 	ledge = 8.5;
