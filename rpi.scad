@@ -45,7 +45,7 @@ module composite_block () {
 module composite_jack () {
 	fine = .5;
 	translate([5,19,8])
-			rotate([0,0,0])
+			rotate([90,0,0])
 				color(CHROME)
 					cylinder(h = 9.3, r = 4.15, $fs=fine);
 }
