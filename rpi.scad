@@ -1,9 +1,5 @@
 use <pin_headers.scad>;
 
-width = 56;
-length = 85;
-height = 1.5;
-
 WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
