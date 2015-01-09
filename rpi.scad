@@ -42,12 +42,11 @@ module composite_block () {
 			cube([10,10,13]);
 }
 
-function rotate_right() = rotate([90,0,0]);
 
 module composite_jack () {
 	fine = .5;
 	translate([5,19,8])
-			rotate_right()
+			rotate([90,0,0])
 				color(CHROME)
 					cylinder(h = 9.3, r = 4.15, $fs=fine);
 }
