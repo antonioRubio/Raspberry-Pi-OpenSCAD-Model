@@ -77,6 +77,7 @@ module audio_jack ()
 	block_length = 12.1;
 	block_width = 11.5;
 	block_height = 10.1;
+	block_dimensions = [block_length, block_width, block_height];
 
 	offset_x = 59;
 	offset = [offset_x, WIDTH - block_width, HEIGHT];
@@ -85,7 +86,7 @@ module audio_jack ()
 	translate(offset)
 		{
 		color(BLUE)
-			cube([block_length, block_width, block_height]);
+			cube(block_dimensions);
 				translate([6, block_width, block_height - radius])
 					rotate(LEFT)
 						color(BLUE)
