@@ -70,7 +70,7 @@ module audio_jack ()
 	{
 	translate([LENGTH-26,WIDTH-11.5,HEIGHT])
 		{
-		color([.4,.4,.95])
+		color(BLUE)
 			cube([12.1,11.5,10.1]);
 				translate([6,11.5,10.1-(6.7/2)])
 					rotate([-90,0,0])
