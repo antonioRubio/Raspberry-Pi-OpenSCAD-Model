@@ -26,7 +26,6 @@ module ethernet_port ()
 
 module usb_port ()
 	{
-	//usb port
 	color("silver")
 	translate([LENGTH-9.5,25,HEIGHT]) cube([17.3,13.3,16]);
 	}
