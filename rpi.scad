@@ -9,6 +9,7 @@ FINE = .5;
 
 METALLIC = "silver";
 CHROME = [.9,.9,.9];
+BLUE = [.4,.4,.95];
 
 ETHERNET_LENGTH = 21.2;
 ETHERNET_WIDTH = 16;
