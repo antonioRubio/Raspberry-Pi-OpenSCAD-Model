@@ -24,7 +24,7 @@ module ethernet_port ()
 
 	color(METALLIC)
 		translate(offset)
-			cube(dimensions); 
+			cube(dimensions()); 
 	}
 
 module usb ()
