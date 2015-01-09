@@ -11,6 +11,7 @@ module ethernet_port ()
 	PORT_LENGTH = 21.2;
 	PORT_WIDTH = 16;
 	PORT_HEIGHT = 13.3;
+	ledge = 1.2;
 
 	offset = [LENGTH - 20, 1.5, HEIGHT];
 	dimensions = [PORT_LENGTH, PORT_WIDTH, PORT_HEIGHT];
