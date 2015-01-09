@@ -5,7 +5,7 @@ length = 85;
 height = 1.5;
 
 WIDTH = 56;
-LENGTH = 
+LENGTH = 85;
 
 module ethernet ()
 	{
