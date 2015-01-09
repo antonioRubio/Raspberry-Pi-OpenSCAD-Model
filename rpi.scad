@@ -28,7 +28,7 @@ module ethernet_port ()
 
 module usb_port ()
 	{
-	ledge = 8.8;
+	ledge = 8.5;
 	usb_length = 17.3; 
 	offset_x = LENGTH - usb_length + ledge;
 
