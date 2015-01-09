@@ -1,6 +1,6 @@
 use <pin_headers.scad>;
 
-width = 56;
+WIDTH = 56;
 length = 85;
 height = 1.5;
 
@@ -94,9 +94,9 @@ module pcb ()
 		{
 		color([0.2,0.5,0])
 		linear_extrude(height = height)
-		square([length,width]); //pcb
+		square([length,WIDTH]); //pcb
 		translate ([25.5, 18,-0.1]) mhole (); 
-		translate ([length-5, width-12.5, -0.1]) mhole (); 
+		translate ([length-5, WIDTH-12.5, -0.1]) mhole (); 
 		}
 	}
 
@@ -117,7 +117,7 @@ module leds()
 		translate([length-4.5,WIDTH-7.55,height]) led();
 		// 100
 		color([0.9,0.1,0,0.6])
-		translate([length-2.45,width-7.55,height]) led();
+		translate([length-2.45,WIDTH-7.55,height]) led();
 	}
 module led()
 	{
