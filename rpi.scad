@@ -12,7 +12,7 @@ module ethernet_port ()
 	dimensions = [21.2, 16, 13.3];
 	color(METALLIC)
 		translate(offset)
-			cube([21.2,16,13.3]); 
+			cube(dimensions); 
 	}
 
 module usb ()
