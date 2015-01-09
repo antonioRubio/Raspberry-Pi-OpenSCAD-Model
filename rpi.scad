@@ -14,7 +14,9 @@ ETHERNET_DIMENSIONS = [ETHERNET_LENGTH, ETHERNET_WIDTH, ETHERNET_HEIGHT];
 USB_LENGTH = 17.3;
 USB_DIMENSIONS = [USB_LENGTH, 13.3, 16];
 
-function offset_x(ledge) = LENGTH - ETHERNET_LENGTH + ledge;
+function offset_x(ledge) = new_offset_x(ledge, ETHERNET_LENGTH);
+
+function new_offset_x(ledge, port_length) = LENGTH - port_length + ledge;
 
 module ethernet_port ()
 	{
