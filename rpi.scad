@@ -69,11 +69,11 @@ module audio_jack ()
 	translate([LENGTH-26,WIDTH-11.5,HEIGHT])
 		{
 		color([.4,.4,.95])
-		cube([12.1,11.5,10.1]);
-		translate([6,11.5,10.1-(6.7/2)])
-		rotate([-90,0,0])
-		color([.4,.4,.95])
-		cylinder(h = 3.5, r = 6.7/2, $fs=.5);
+			cube([12.1,11.5,10.1]);
+				translate([6,11.5,10.1-(6.7/2)])
+					rotate([-90,0,0])
+						color([.4,.4,.95])
+							cylinder(h = 3.5, r = 6.7/2, $fs=.5);
 		}
 	}
 
