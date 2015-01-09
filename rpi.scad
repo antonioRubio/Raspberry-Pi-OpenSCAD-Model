@@ -35,7 +35,7 @@ module usb_port ()
 	offset_x = LENGTH - USB_LENGTH + ledge;
 
 	color(METALLIC)
-		translate([offset_x, 25, HEIGHT]) 
+		translate([new_offset_x(ledge, USB_LENGTH), 25, HEIGHT]) 
 			cube(USB_DIMENSIONS);
 	}
 
