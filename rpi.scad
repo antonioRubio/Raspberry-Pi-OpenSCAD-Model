@@ -98,8 +98,7 @@ module audio_jack ()
 		{
 		translate(offset_for_jack)
 					audio_connector(radius);
-		color(BLUE)
-			cube(block_dimensions);
+		audio_block();
 				
 		}
 	}
