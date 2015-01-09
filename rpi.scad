@@ -36,6 +36,11 @@ module usb_port ()
 			cube(USB_DIMENSIONS);
 	}
 
+module composite_block () {
+	color("yellow")
+			cube([10,10,13]);
+}
+
 module composite_port ()
 	{
 	translate([LENGTH-43.6,WIDTH-12,HEIGHT])
