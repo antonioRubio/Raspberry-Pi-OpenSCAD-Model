@@ -5,13 +5,12 @@ LENGTH = 85;
 HEIGHT = 1.5;
 
 METALLIC = "silver";
+PORT_LENGTH = 21.2;
+PORT_WIDTH = 16;
+PORT_HEIGHT = 13.3;
 
-function dimensions() = {
-	PORT_LENGTH = 21.2;
-	PORT_WIDTH = 16;
-	PORT_HEIGHT = 13.3;
-	dimensions = [PORT_LENGTH, PORT_WIDTH, PORT_HEIGHT];
-}
+function dimensions() = [PORT_LENGTH, PORT_WIDTH, PORT_HEIGHT];
+
 
 module ethernet_port ()
 	{
