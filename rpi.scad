@@ -132,7 +132,7 @@ module led()
 module rpi ()
 	{
 		pcb ();
-		ethernet ();
+		ethernet_port ();
 		usb (); 
 		composite (); 
 		audio (); 
