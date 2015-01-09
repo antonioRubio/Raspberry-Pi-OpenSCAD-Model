@@ -47,7 +47,6 @@ module composite_block () {
 
 
 module composite_jack () {
-	fine = .5;
 	translate([5,19,8])
 			rotate(RIGHT)
 				color(CHROME)
