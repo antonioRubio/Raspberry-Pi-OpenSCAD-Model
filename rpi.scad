@@ -95,7 +95,7 @@ module pcb ()
 		difference ()
 		{
 		color([0.2,0.5,0])
-		linear_extrude(HEIGHT = HEIGHT)
+		linear_extrude(height = HEIGHT)
 		square([LENGTH,WIDTH]); //pcb
 		translate ([25.5, 18,-0.1]) mhole (); 
 		translate ([LENGTH-5, WIDTH-12.5, -0.1]) mhole (); 
