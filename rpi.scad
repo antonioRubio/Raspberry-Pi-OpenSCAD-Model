@@ -76,7 +76,7 @@ module audio_jack ()
 	block_width = 11.5;
 	block_height = 10.1;
 
-	translate([LENGTH-26, WIDTH - block_width, HEIGHT])
+	translate([LENGTH - 26, WIDTH - block_width, HEIGHT])
 		{
 		color(BLUE)
 			cube([12.1, block_width, block_height]);
