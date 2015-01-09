@@ -38,7 +38,6 @@ module usb_port ()
 
 module composite_port ()
 	{
-	//composite port
 	translate([LENGTH-43.6,WIDTH-12,HEIGHT])
 		{
 		color("yellow")
