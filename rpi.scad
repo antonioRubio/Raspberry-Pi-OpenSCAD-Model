@@ -54,7 +54,7 @@ module gpio ()
 	{
 	//headers
 	rotate([0,0,180])
-	translate([-1,-width+6,height])
+	translate([-1,-WIDTH+6,height])
 	off_pin_header(rows = 13, cols = 2);
 	}
 
