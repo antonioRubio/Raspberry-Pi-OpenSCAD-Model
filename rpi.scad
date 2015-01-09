@@ -89,7 +89,7 @@ module audio_connector() {
 	offset_for_jack = [half(block_length), block_width, block_height - radius];
 	//translate(offset_for_jack)
 		//rotate(LEFT)
-			//color(BLUE)
+			color(BLUE)
 				cylinder(h = 3.5, r = radius, $fs=FINE);
 }
 
