@@ -80,7 +80,7 @@ module audio_block() {
 			cube(dimensions);
 }
 
-module audio_connector(radius) {
+module audio_connector() {
 	block_length = 12.1;
 	block_width = 11.5;
 	block_height = 10.1;
@@ -100,7 +100,7 @@ module audio_jack ()
 
 	translate(offset)
 		{
-		audio_connector(radius);
+		audio_connector();
 		audio_block();				
 		}
 	}
