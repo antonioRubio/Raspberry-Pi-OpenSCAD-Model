@@ -69,11 +69,12 @@ module composite_port ()
 
 module audio_jack ()
 	{
+	diameter = 6.7;
 	translate([LENGTH-26,WIDTH-11.5,HEIGHT])
 		{
 		color(BLUE)
 			cube([12.1,11.5,10.1]);
-				translate([6,11.5,10.1-(6.7/2)])
+				translate([6, 11.5, 10.1 - (6.7/2)])
 					rotate(LEFT)
 						color(BLUE)
 							cylinder(h = 3.5, r = 6.7/2, $fs=FINE);
