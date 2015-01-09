@@ -72,6 +72,7 @@ function radius(diameter) = diameter / 2;
 module audio_jack ()
 	{
 	diameter = 6.7;
+	radius = radius(diameter);
 	translate([LENGTH-26,WIDTH-11.5,HEIGHT])
 		{
 		color(BLUE)
@@ -79,7 +80,7 @@ module audio_jack ()
 				translate([6, 11.5, 10.1 - radius(diameter)])
 					rotate(LEFT)
 						color(BLUE)
-							cylinder(h = 3.5, r = radius(diameter), $fs=FINE);
+							cylinder(h = 3.5, r = radius, $fs=FINE);
 		}
 	}
 
