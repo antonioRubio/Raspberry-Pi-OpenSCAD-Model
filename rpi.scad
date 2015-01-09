@@ -22,7 +22,7 @@ module ethernet_port ()
 	{
 	ledge = 1.2;
 	pcb_margin = 1.5;
-	offset = [offset_x(ledge), pcb_margin, HEIGHT];
+	offset = [new_offset_x(ledge, ETHERNET_LENGTH), pcb_margin, HEIGHT];
 
 	color(METALLIC)
 		translate(offset)
