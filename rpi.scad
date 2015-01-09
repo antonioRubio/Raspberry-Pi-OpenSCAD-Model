@@ -70,6 +70,11 @@ module composite_port ()
 function half(dimension) = dimension / 2;
 function radius(diameter) = half(diameter);
 
+module audio_block() {
+	color(BLUE)
+			cube(block_dimensions);
+}
+
 module audio_connector(radius) {
 	rotate(LEFT)
 		color(BLUE)
