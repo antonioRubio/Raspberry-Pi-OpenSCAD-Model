@@ -101,7 +101,7 @@ module audio_jack ()
 	translate(offset)
 		{
 		audio_connector();
-		//audio_block();				
+		audio_block();				
 		}
 	}
 
