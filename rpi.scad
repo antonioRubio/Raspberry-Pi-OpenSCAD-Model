@@ -145,7 +145,7 @@ module rpi ()
 		pcb ();
 		ethernet_port ();
 		usb_port (); 
-		composite (); 
+		//composite (); 
 		audio (); 
 		gpio (); 
 		hdmi ();
