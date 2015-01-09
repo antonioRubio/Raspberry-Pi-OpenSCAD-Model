@@ -11,7 +11,7 @@ PORT_HEIGHT = 13.3;
 ETHERNET_LENGTH = 21.2;
 ETHERNET_DIMENSIONS = [ETHERNET_LENGTH, PORT_WIDTH, PORT_HEIGHT];
 
-function offset_x(ledge) = LENGTH - PORT_LENGTH + ledge;
+function offset_x(ledge) = LENGTH - ETHERNET_LENGTH + ledge;
 
 module ethernet_port ()
 	{
