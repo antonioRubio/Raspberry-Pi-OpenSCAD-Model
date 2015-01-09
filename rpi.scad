@@ -45,7 +45,7 @@ module composite_jack () {
 	translate([5,19,8])
 			rotate([90,0,0])
 				color([.9,.9,.9])
-					cylinder(h = 9.3, r = 4.15, $fs=.5);
+					cylinder(h = 9.3, r = 4.15, $fs=3);
 }
 
 module composite_port ()
