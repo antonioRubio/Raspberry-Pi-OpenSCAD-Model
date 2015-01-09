@@ -1,5 +1,3 @@
-//everything in mm
-
 use <pin_headers.scad>;
 
 width = 56;
@@ -13,7 +11,6 @@ module ethernet ()
 	color("silver")
 	translate([length-20,1.5,height]) cube([21.2,16,13.3]); 
 	}
-
 
 module usb ()
 	{
