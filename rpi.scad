@@ -4,6 +4,8 @@ WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
 
+METALLIC = "silver";
+
 module ethernet_port ()
 	{
 	color("silver")
