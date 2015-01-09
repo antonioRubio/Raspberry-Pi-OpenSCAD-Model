@@ -31,7 +31,7 @@ module usb_port ()
 	{
 	ledge = 8.5;
 	usb_length = 17.3; 
-	offset_x = LENGTH - usb_length + ledge;
+	offset_x = LENGTH - USB_LENGTH + ledge;
 
 	color(METALLIC)
 		translate([offset_x, 25, HEIGHT]) 
