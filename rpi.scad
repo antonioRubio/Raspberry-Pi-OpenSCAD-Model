@@ -70,9 +70,9 @@ module composite_port ()
 function half(dimension) = dimension / 2;
 function radius(diameter) = half(diameter);
 
-module audio_block() {
+module audio_block(dimensions) {
 	color(BLUE)
-			cube(block_dimensions);
+			cube(dimensions);
 }
 
 module audio_connector(radius) {
@@ -98,7 +98,7 @@ module audio_jack ()
 		{
 		translate(offset_for_jack)
 					audio_connector(radius);
-		audio_block();
+		audio_block(block_dimensions);
 				
 		}
 	}
