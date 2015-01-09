@@ -38,7 +38,7 @@ module composite ()
 module audio ()
 	{
 	//audio jack
-	translate([length-26,width-11.5,height])
+	translate([length-26,WIDTH-11.5,height])
 		{
 		color([.4,.4,.95])
 		cube([12.1,11.5,10.1]);
