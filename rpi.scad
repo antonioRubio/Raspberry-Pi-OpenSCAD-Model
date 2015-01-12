@@ -228,7 +228,7 @@ module leds() {
 	offset_x = LENGTH - 11.5;
 
 	first_led_group(offset_x);
-	second_position = offset_x + group_spacer;
+	second_position = offset_x + spacer + group_spacer;
 	second_led_group(second_position);
 	}
 
