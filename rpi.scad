@@ -197,7 +197,7 @@ module pcb () {
 		}
 	}
 
-module first_led_group() {
+module first_led_group(offset_x) {
 	color(RED)
 		positioned_led(offset_x);
 		// pwr
@@ -211,12 +211,7 @@ module leds() {
 	group_spacer = 2.9;
 	offset_x = LENGTH - 11.5;
 
-		// act
-		color(RED)
-			positioned_led(offset_x);
-		// pwr
-		color(RED)
-			positioned_led(offset_x + spacer);
+		first_led_group(offset_x);
 
 		// fdx
 		color(RED)
