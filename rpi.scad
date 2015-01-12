@@ -213,7 +213,8 @@ module leds() {
 	offset_x = LENGTH - 11.5;
 
 	first_led_group(offset_x);
-
+	
+	offset_x = offset_x + group_spacer;
 		// fdx
 		color(RED)
 			translate([LENGTH-6.55,offset_y,HEIGHT])
