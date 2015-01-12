@@ -168,6 +168,13 @@ module mhole () {
 	cylinder (r=3/2, h=HEIGHT+.2, $fs=0.1);
 	}
 
+
+module integrated_circuit() {
+	color([0.2,0.5,0])
+				linear_extrude(height = HEIGHT)
+					square([LENGTH,WIDTH]); //pcb
+}
+
 module pcb () {
 		difference () {
 			color([0.2,0.5,0])
