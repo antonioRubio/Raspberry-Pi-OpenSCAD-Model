@@ -142,7 +142,7 @@ module sd_slot() {
 
 	color (BLACK)
 		translate ([offset_x, offset_y, -5.2 + HEIGHT])
-			cube ([16.8, 28.5, 5.2 - HEIGHT]);
+			cube ([16.8, 28.5, 5.2]);
 }
 
 module sd ()
