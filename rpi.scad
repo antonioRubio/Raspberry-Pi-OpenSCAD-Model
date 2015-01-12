@@ -137,8 +137,9 @@ module power ()
 	}
 
 module sd_slot() {
+	offset_x = 0.9;
 	color (BLACK)
-		translate ([0.9, 15.2,-5.2+HEIGHT ])
+		translate ([offset_x, 15.2,-5.2+HEIGHT ])
 			cube ([16.8, 28.5, 5.2-HEIGHT]);
 }
 
@@ -148,8 +149,8 @@ module sd ()
 	sd_slot();
 
 	color ([.2,.2,.7])
-	translate ([-17.3,17.7,-2.9])
-	cube ([32, 24, 2] );
+		translate ([-17.3,17.7,-2.9])
+			cube ([32, 24, 2] );
 	}
 
 module mhole ()
