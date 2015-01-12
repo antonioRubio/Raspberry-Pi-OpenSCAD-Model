@@ -226,7 +226,9 @@ module leds() {
 				led();
 	}
 
-module positioned_led() 
+module positioned_led() {
+	cube([1.0,1.6,0.7]);
+} 
 
 module led() {
 		cube([1.0,1.6,0.7]);
