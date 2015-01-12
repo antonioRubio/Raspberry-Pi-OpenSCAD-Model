@@ -143,6 +143,7 @@ module sd_slot() {
 	offset_x = 0.9;
 	offset_y = 15.2;
 	offset_z = (slot_height * NEGATIVE_FACTOR) + HEIGHT;
+	offset = [0.9, 15.2, offset_z]
 	dimensions = [16.8, 28.5, slot_height];
 
 	color (BLACK)
