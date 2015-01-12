@@ -225,6 +225,9 @@ module leds() {
 			translate([LENGTH-2.45,offset_y,HEIGHT])
 				led();
 	}
+
+module positioned_led() 
+
 module led() {
 		cube([1.0,1.6,0.7]);
 	}
