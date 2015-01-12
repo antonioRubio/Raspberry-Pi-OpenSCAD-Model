@@ -145,7 +145,7 @@ module sd_slot() {
 	dimensions = [16.8, 28.5, slot_height];
 
 	color (BLACK)
-		translate ([offset_x, offset_y, offset_z])
+		translate (offset)
 			cube (dimensions);
 }
 
