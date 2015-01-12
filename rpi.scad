@@ -230,7 +230,7 @@ module positioned_led() {
 	dimensions = [1.0, 1.6, 0.7];
 	
 	translate([offset_x,offset_y,HEIGHT])
-	cube(dimensions);
+		cube(dimensions);
 	
 } 
 
