@@ -231,7 +231,7 @@ module positioned_led(offset_x) {
 }
 
 module led_group(offset_x, size) {
-	offset = offset_x;
+	offset = offset_x - SPACER;
 	for(i = [1:size]) {
 		positioned_led(offset + (SPACER * (i - 1)));
 	}
