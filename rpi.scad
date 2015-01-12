@@ -166,6 +166,8 @@ module sd () {
 	sd_card();
 }
 
+function twenty_per_cent(value) = value * .2; 
+
 module mhole () {
 	cylinder (r=1.5, h=HEIGHT+.2, $fs=FINEST);
 	}
