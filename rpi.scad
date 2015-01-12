@@ -109,6 +109,7 @@ module gpio ()
 	{
 	offset_x = -1;
 	offset_y = -50;
+	offset = [offset_x, offset_y, HEIGHT];
 	rotate(TILT)
 		translate([offset_x, offset_y, HEIGHT])
 			off_pin_header(rows = 13, cols = 2);
