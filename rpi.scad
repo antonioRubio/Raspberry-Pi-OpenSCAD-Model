@@ -159,9 +159,7 @@ module sd_card() {
 			cube (dimensions);	
 }
 
-module sd ()
-	{
-	
+module sd () {
 	sd_slot();
 	sd_card();
 }
