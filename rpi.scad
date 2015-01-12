@@ -209,13 +209,10 @@ module first_led_group(offset_x) {
 module second_led_group(offset_x) {
 	offset_y = WIDTH - 7.55;
 	spacer = 2.05;
-			// fdx
 		color(RED)
 			positioned_led(offset_x);
-		// lnk
 		color(RED)
 			positioned_led(offset_x + spacer);
-		// 100
 		color(RED)
 			positioned_led(offset_x + (2 * spacer));
 }
