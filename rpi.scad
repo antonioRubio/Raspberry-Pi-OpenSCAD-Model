@@ -227,7 +227,8 @@ module leds() {
 	}
 
 module positioned_led() {
-	cube([1.0,1.6,0.7]);
+	dimensions = [1.0, 1.6, 0.7];
+	cube(dimensions);
 } 
 
 module led() {
