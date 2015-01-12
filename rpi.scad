@@ -172,7 +172,6 @@ module mhole () {
 	cylinder (r=1.5, h=HEIGHT + twenty_per_cent(HEIGHT), $fs=FINEST);
 	}
 
-
 module integrated_circuit() {
 	color(DARK_GREEN)
 				linear_extrude(height = HEIGHT)
