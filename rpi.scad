@@ -9,6 +9,7 @@ WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
 SPACER = 2.05;
+GROUP_SPACER = 2.9;
 
 RIGHT = [90, 0, 0];
 LEFT = [-90, 0, 0];
