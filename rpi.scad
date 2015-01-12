@@ -167,7 +167,7 @@ module sd () {
 }
 
 module mhole () {
-	cylinder (r=1.5, h=HEIGHT, $fs=FINEST);
+	cylinder (r=1.5, h=HEIGHT+.2, $fs=FINEST);
 	}
 
 
