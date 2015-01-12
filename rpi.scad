@@ -209,7 +209,7 @@ module leds() {
 
 		// fdx
 		color(RED)
-		translate([LENGTH-6.55,WIDTH-7.55,HEIGHT]) led();
+		translate([LENGTH-6.55,offset_y,HEIGHT]) led();
 		// lnk
 		color(RED)
 		translate([LENGTH-4.5,WIDTH-7.55,HEIGHT]) led();
