@@ -197,8 +197,7 @@ module leds() {
 		color([0.9,0.1,0,0.6])
 		translate([LENGTH-2.45,WIDTH-7.55,HEIGHT]) led();
 	}
-module led()
-	{
+module led() {
 		cube([1.0,1.6,0.7]);
 	}
 
