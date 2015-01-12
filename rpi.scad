@@ -1,11 +1,13 @@
 use <pin_headers.scad>;
 
+NEGATIVE_FACTOR = -1;
 WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
 RIGHT = [90, 0, 0];
 LEFT = [-90, 0, 0];
 TILT = [0, 0, 180];
+
 
 FINE = .5;
 
