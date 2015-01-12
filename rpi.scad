@@ -169,7 +169,7 @@ module sd () {
 function twenty_per_cent(value) = value * .2; 
 
 module mhole () {
-	cylinder (r=1.5, h=HEIGHT+.2, $fs=FINEST);
+	cylinder (r=1.5, h=HEIGHT + twenty_per_cent(HEIGHT), $fs=FINEST);
 	}
 
 
