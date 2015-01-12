@@ -226,7 +226,7 @@ module leds() {
 				led();
 	}
 
-module positioned_led() {
+module positioned_led(offset_x) {
 	dimensions = [1.0, 1.6, 0.7];
 	
 	translate([offset_x,offset_y,HEIGHT])
