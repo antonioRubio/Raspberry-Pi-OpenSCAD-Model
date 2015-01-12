@@ -168,8 +168,7 @@ module mhole () {
 	cylinder (r=3/2, h=HEIGHT+.2, $fs=0.1);
 	}
 
-module pcb ()
-	{
+module pcb () {
 		difference ()
 		{
 		color([0.2,0.5,0])
