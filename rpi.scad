@@ -118,8 +118,8 @@ module gpio ()
 module hdmi ()
 	{
 	color (METALLIC)
-	translate ([37.1,-1,HEIGHT])
-	cube([15.1,11.7,8-HEIGHT]);
+		translate ([37.1,-1,HEIGHT])
+			cube([15.1,11.7,8-HEIGHT]);
 	}
 
 module power ()
