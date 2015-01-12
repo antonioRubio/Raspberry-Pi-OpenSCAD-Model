@@ -151,8 +151,9 @@ module sd_slot() {
 }
 
 module sd_card() {
+	offset = [-17.3, 17.7, -2.9];
 	color (BLUE)
-		translate ([-17.3,17.7,-2.9])
+		translate (offset)
 			cube ([32, 24, 2] );
 	
 }
