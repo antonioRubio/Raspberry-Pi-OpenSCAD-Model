@@ -180,9 +180,9 @@ module integrated_circuit() {
 
 module holes() {
 	translate ([25.5, 18,-0.1])
-				mhole (); 
-			translate ([LENGTH-5, WIDTH-12.5, -0.1])
-				mhole (); 
+			mhole (); 
+	translate ([LENGTH-5, WIDTH-12.5, -0.1])
+			mhole (); 
 }
 
 module pcb () {
