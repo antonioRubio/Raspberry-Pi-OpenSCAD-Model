@@ -200,7 +200,6 @@ module pcb () {
 	}
 
 module first_led_group(offset_x) {
-	SPACER = 2.05;
 	color(RED)
 		positioned_led(offset_x);
 		// pwr
