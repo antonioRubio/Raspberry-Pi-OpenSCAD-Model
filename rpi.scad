@@ -200,6 +200,7 @@ module pcb () {
 module leds() {
 	offset_y = WIDTH - 7.55;
 	spacer = 2.05;
+	group_spacer = 2.9;
 		// act
 		color(RED)
 			translate([LENGTH-11.5,offset_y,HEIGHT])
