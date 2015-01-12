@@ -8,6 +8,7 @@ FINEST = .1;
 WIDTH = 56;
 LENGTH = 85;
 HEIGHT = 1.5;
+SPACER = 2.05;
 
 RIGHT = [90, 0, 0];
 LEFT = [-90, 0, 0];
