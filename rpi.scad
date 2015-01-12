@@ -177,9 +177,7 @@ module integrated_circuit() {
 
 module pcb () {
 		difference () {
-			color([0.2,0.5,0])
-				linear_extrude(height = HEIGHT)
-					square([LENGTH,WIDTH]); //pcb
+			integrated_circuit();
 			translate ([25.5, 18,-0.1])
 				mhole (); 
 			translate ([LENGTH-5, WIDTH-12.5, -0.1])
