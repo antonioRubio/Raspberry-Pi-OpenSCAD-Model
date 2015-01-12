@@ -172,7 +172,7 @@ module mhole () {
 module integrated_circuit() {
 	color([0.2,0.5,0])
 				linear_extrude(height = HEIGHT)
-					square([LENGTH,WIDTH]); //pcb
+					square([LENGTH,WIDTH]);
 }
 
 module pcb () {
