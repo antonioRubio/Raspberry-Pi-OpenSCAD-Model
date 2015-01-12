@@ -16,6 +16,7 @@ CHROME = [.9,.9,.9];
 BLUE = [.4,.4,.95];
 BLACK = [0, 0, 0];
 BLUE = [.2,.2,.7];
+DARK_GREEN = [0.2,0.5,0]; 
 
 ETHERNET_LENGTH = 21.2;
 ETHERNET_WIDTH = 16;
