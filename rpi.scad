@@ -178,6 +178,13 @@ module integrated_circuit() {
 					square([LENGTH,WIDTH]);
 }
 
+module holes() {
+	translate ([25.5, 18,-0.1])
+				mhole (); 
+			translate ([LENGTH-5, WIDTH-12.5, -0.1])
+				mhole (); 
+}
+
 module pcb () {
 		difference () {
 			integrated_circuit();
