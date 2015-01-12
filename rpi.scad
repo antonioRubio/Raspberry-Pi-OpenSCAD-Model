@@ -212,7 +212,7 @@ module leds() {
 	group_spacer = 2.9;
 	offset_x = LENGTH - 11.5;
 
-		first_led_group(offset_x);
+	first_led_group(offset_x);
 
 		// fdx
 		color(RED)
