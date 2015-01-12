@@ -164,8 +164,7 @@ module sd () {
 	sd_card();
 }
 
-module mhole ()
-	{
+module mhole () {
 	cylinder (r=3/2, h=HEIGHT+.2, $fs=0.1);
 	}
 
