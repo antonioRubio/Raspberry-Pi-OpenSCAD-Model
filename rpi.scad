@@ -205,7 +205,8 @@ module leds() {
 				led();
 		// pwr
 		color(RED)
-		translate([LENGTH-9.45,offset_y,HEIGHT]) led();
+			translate([LENGTH-9.45,offset_y,HEIGHT])
+				led();
 
 		// fdx
 		color(RED)
