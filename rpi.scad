@@ -2,6 +2,7 @@ use <pin_headers.scad>;
 
 NEGATIVE_FACTOR = -1;
 FINE = .5;
+FINEST = .1;
 
 WIDTH = 56;
 LENGTH = 85;
