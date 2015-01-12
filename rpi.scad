@@ -211,13 +211,6 @@ module second_led_group(offset_x) {
 	positioned_led(offset_x + (2 * SPACER));
 }
 
-module led_group(offset_x, size) {
-	for(i = [1:size]) {
-		positioned_led(offset_x);
-		offset_x = offset_x + SPACER;
-	}
-} 
-
 module leds() {
 	offset_x = LENGTH - 11.5;
 	first_led_group(offset_x);
@@ -234,7 +227,14 @@ module positioned_led(offset_x) {
 		color(RED)
 			cube(dimensions);
 	
-} 
+}
+
+module led_group(offset_x, size) {
+	for(i = [1:size]) {
+		positioned_led(offset_x);
+		offset_x = offset_x + SPACER;
+	}
+}
 
 module led() {
 		cube([1.0,1.6,0.7]);
