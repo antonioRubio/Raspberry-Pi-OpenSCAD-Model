@@ -106,7 +106,6 @@ module audio_jack ()
 
 module gpio ()
 	{
-	// headers
 	rotate([0,0,180])
 	translate([-1,-WIDTH+6,HEIGHT])
 	off_pin_header(rows = 13, cols = 2);
@@ -114,7 +113,7 @@ module gpio ()
 
 module hdmi ()
 	{
-	color ("silver")
+	color ("silver")	
 	translate ([37.1,-1,HEIGHT])
 	cube([15.1,11.7,8-HEIGHT]);
 	}
