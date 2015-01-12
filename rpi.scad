@@ -106,6 +106,7 @@ module audio_jack ()
 
 module gpio ()
 	{
+	// headers
 	rotate([0,0,180])
 	translate([-1,-WIDTH+6,HEIGHT])
 	off_pin_header(rows = 13, cols = 2);
