@@ -210,8 +210,7 @@ module second_led_group(offset_x) {
 	offset_y = WIDTH - 7.55;
 			// fdx
 		color(RED)
-			translate([LENGTH-6.55,offset_y,HEIGHT])
-				led();
+			positioned_led(offset_x);
 		// lnk
 		color(RED)
 			translate([LENGTH-4.5,offset_y,HEIGHT])
