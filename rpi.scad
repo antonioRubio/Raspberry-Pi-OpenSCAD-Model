@@ -182,7 +182,7 @@ module holes() {
 	positions = [[25.5, 18,-0.1], [LENGTH-5, WIDTH-12.5, -0.1]];
 	number_of_holes = len(positions);
 
-	for(i = [0:number_of_holes]) {
+	for(i = [0:number_of_holes - 1]) {
 		translate(positions[i])
 			mhole();
 	}
