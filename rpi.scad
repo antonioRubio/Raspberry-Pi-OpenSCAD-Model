@@ -199,31 +199,31 @@ module pcb () {
 	}
 
 module first_led_group(offset_x) {
-	spacer = 2.05;
+	SPACER = 2.05;
 	color(RED)
 		positioned_led(offset_x);
 		// pwr
 	color(RED)
-		positioned_led(offset_x + spacer);
+		positioned_led(offset_x + SPACER);
 }
 
 module second_led_group(offset_x) {
 	offset_y = WIDTH - 7.55;
-	spacer = 2.05;
+	SPACER = 2.05;
 		color(RED)
 			positioned_led(offset_x);
 		color(RED)
-			positioned_led(offset_x + spacer);
+			positioned_led(offset_x + SPACER);
 		color(RED)
-			positioned_led(offset_x + (2 * spacer));
+			positioned_led(offset_x + (2 * SPACER));
 }
 
 module leds() {
-	group_spacer = 2.9;
+	group_SPACER = 2.9;
 	offset_x = LENGTH - 11.5;
-	spacer = 2.05;
+	SPACER = 2.05;
 	first_led_group(offset_x);
-	second_position = offset_x + spacer + group_spacer;
+	second_position = offset_x + SPACER + group_SPACER;
 	second_led_group(second_position);
 	}
 
