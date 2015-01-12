@@ -137,6 +137,7 @@ module power ()
 	}
 
 module sd_slot() {
+	slot_height = 5.2;
 	offset_x = 0.9;
 	offset_y = 15.2;
 	offset_z = -5.2 + HEIGHT;
