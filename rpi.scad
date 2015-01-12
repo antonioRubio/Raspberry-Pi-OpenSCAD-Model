@@ -197,6 +197,14 @@ module pcb () {
 		}
 	}
 
+module first_led_group() {
+	color(RED)
+		positioned_led(offset_x);
+		// pwr
+	color(RED)
+		positioned_led(offset_x + spacer);
+}
+
 module leds() {
 	offset_y = WIDTH - 7.55;
 	spacer = 2.05;
