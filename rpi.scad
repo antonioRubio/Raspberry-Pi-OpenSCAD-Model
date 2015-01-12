@@ -217,8 +217,7 @@ module second_led_group(offset_x) {
 			positioned_led(offset_x + spacer);
 		// 100
 		color(RED)
-			translate([LENGTH-2.45,offset_y,HEIGHT])
-				led();
+			positioned_led(offset_x + (2 * spacer));
 }
 
 module leds() {
