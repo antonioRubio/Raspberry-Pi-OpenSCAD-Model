@@ -213,13 +213,16 @@ module leds() {
 
 		// fdx
 		color(RED)
-		translate([LENGTH-6.55,offset_y,HEIGHT]) led();
+			translate([LENGTH-6.55,offset_y,HEIGHT])
+				led();
 		// lnk
 		color(RED)
-		translate([LENGTH-4.5,offset_y,HEIGHT]) led();
+			translate([LENGTH-4.5,offset_y,HEIGHT])
+				led();
 		// 100
 		color(RED)
-		translate([LENGTH-2.45,offset_y,HEIGHT]) led();
+			translate([LENGTH-2.45,offset_y,HEIGHT])
+				led();
 	}
 module led() {
 		cube([1.0,1.6,0.7]);
