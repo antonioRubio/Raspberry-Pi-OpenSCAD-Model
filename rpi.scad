@@ -108,8 +108,8 @@ module audio_jack ()
 module gpio ()
 	{
 	rotate(TILT)
-	translate([-1,-WIDTH+6,HEIGHT])
-	off_pin_header(rows = 13, cols = 2);
+		translate([-1,-WIDTH+6,HEIGHT])
+			off_pin_header(rows = 13, cols = 2);
 	}
 
 module hdmi ()
