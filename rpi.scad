@@ -1,6 +1,7 @@
 use <pin_headers.scad>;
 
 NEGATIVE_FACTOR = -1;
+ARRAY_BASE_CORRECTION = -1;
 FINE = .5;
 FINEST = .1;
 
