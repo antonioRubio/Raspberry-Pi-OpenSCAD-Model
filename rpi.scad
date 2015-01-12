@@ -136,11 +136,16 @@ module power ()
 			cube (dimensions);
 	}
 
-module sd ()
-	{
+module sd_slot() {
 	color (BLACK)
 		translate ([0.9, 15.2,-5.2+HEIGHT ])
 			cube ([16.8, 28.5, 5.2-HEIGHT]);
+}
+
+module sd ()
+	{
+	
+	slot();
 
 	color ([.2,.2,.7])
 	translate ([-17.3,17.7,-2.9])
