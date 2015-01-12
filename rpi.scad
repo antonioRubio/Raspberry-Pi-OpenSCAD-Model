@@ -161,11 +161,8 @@ module sd ()
 	{
 	
 	sd_slot();
-
-	color ([.2,.2,.7])
-		translate ([-17.3,17.7,-2.9])
-			cube ([32, 24, 2] );
-	}
+	sd_card();
+}
 
 module mhole ()
 	{
