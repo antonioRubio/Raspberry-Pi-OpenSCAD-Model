@@ -131,7 +131,7 @@ module power ()
 	offset_y = 3.8;
 
 	color(METALLIC)
-		translate ([offset_x,3.8,HEIGHT])
+		translate ([offset_x, offset_y, HEIGHT])
 			cube ([5.6, 8,4.4-HEIGHT]);
 	}
 
