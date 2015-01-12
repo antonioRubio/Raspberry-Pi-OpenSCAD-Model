@@ -156,8 +156,7 @@ module sd_card() {
 
 	color (BLUE)
 		translate (offset)
-			cube (dimensions);
-	
+			cube (dimensions);	
 }
 
 module sd ()
