@@ -209,7 +209,7 @@ module leds() {
 		color(RED)
 		translate([LENGTH-6.55,WIDTH-7.55,HEIGHT]) led();
 		// lnk
-		color([0.9,0.1,0,0.6])
+		color(RED)
 		translate([LENGTH-4.5,WIDTH-7.55,HEIGHT]) led();
 		// 100
 		color([0.9,0.1,0,0.6])
