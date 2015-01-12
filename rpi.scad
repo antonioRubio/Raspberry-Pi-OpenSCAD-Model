@@ -180,10 +180,11 @@ module integrated_circuit() {
 
 module holes() {
 	positions = [[25.5, 18,-0.1], [LENGTH-5, WIDTH-12.5, -0.1]];
-	translate ([25.5, 18,-0.1])
-			mhole (); 
-	translate ([LENGTH-5, WIDTH-12.5, -0.1])
-			mhole (); 
+
+	for(i = [0:1]) {
+		translate(positions[i])
+			mhole();
+	}
 }
 
 module pcb () {
