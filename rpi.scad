@@ -11,8 +11,6 @@ RIGHT = [90, 0, 0];
 LEFT = [-90, 0, 0];
 TILT = [0, 0, 180];
 
-
-
 METALLIC = "silver";
 CHROME = [.9,.9,.9];
 BLUE = [.4,.4,.95];
