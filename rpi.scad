@@ -118,6 +118,7 @@ module gpio ()
 module hdmi ()
 	{
 	offset_x = 37.1;
+	offset_y = -1;
 	color (METALLIC)
 		translate ([offset_x,-1,HEIGHT])
 			cube([15.1,11.7,8-HEIGHT]);
