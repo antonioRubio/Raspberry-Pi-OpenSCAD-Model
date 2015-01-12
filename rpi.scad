@@ -208,11 +208,9 @@ module first_led_group(offset_x) {
 
 module second_led_group(offset_x) {
 	offset_y = WIDTH - 7.55;
-			positioned_led(offset_x);
-		color(RED)
-			positioned_led(offset_x + SPACER);
-		color(RED)
-			positioned_led(offset_x + (2 * SPACER));
+	positioned_led(offset_x);
+	positioned_led(offset_x + SPACER);
+	positioned_led(offset_x + (2 * SPACER));
 }
 
 module leds() {
