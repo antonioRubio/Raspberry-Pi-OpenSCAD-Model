@@ -198,7 +198,7 @@ module pcb () {
 
 module leds() {
 		// act
-		color([0.9,0.1,0,0.9])
+		color([0.9,0.1,0,0.6])
 		translate([LENGTH-11.5,WIDTH-7.55,HEIGHT]) led();
 		// pwr
 		color([0.9,0.1,0,0.6])
