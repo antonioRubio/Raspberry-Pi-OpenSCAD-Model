@@ -198,7 +198,7 @@ module pcb () {
 	}
 
 module leds() {
-	offset_y = WIDTH-7.55;
+	offset_y = WIDTH - 7.55;
 		// act
 		color(RED)
 			translate([LENGTH-11.5,WIDTH-7.55,HEIGHT])
