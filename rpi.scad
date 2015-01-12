@@ -1,6 +1,7 @@
 use <pin_headers.scad>;
 
 NEGATIVE_FACTOR = -1;
+FINE = .5;
 
 WIDTH = 56;
 LENGTH = 85;
@@ -11,7 +12,6 @@ LEFT = [-90, 0, 0];
 TILT = [0, 0, 180];
 
 
-FINE = .5;
 
 METALLIC = "silver";
 CHROME = [.9,.9,.9];
