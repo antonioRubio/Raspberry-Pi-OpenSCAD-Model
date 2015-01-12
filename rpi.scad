@@ -205,11 +205,12 @@ module leds() {
 
 		// act
 		color(RED)
-			positioned_led(offset_x + 1);
+			positioned_led(offset_x);
 		// pwr
 		color(RED)
-			translate([offset_x + spacer,offset_y,HEIGHT])
-				led();
+			//translate([offset_x + spacer,offset_y,HEIGHT])
+				//led();
+			positioned_led(offset_x + spacer);
 
 		// fdx
 		color(RED)
