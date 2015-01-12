@@ -171,7 +171,7 @@ module mhole () {
 
 
 module integrated_circuit() {
-	color([0.2,0.5,0])
+	color(DARK_GREEN)
 				linear_extrude(height = HEIGHT)
 					square([LENGTH,WIDTH]);
 }
