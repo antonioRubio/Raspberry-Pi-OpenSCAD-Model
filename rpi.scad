@@ -226,9 +226,11 @@ module leds() {
 module positioned_led(offset_x) {
 	dimensions = [1.0, 1.6, 0.7];
 	offset_y = WIDTH - 7.55;
+	
 
 	translate([offset_x,offset_y,HEIGHT])
-		cube(dimensions);
+		color(RED)
+			cube(dimensions);
 	
 } 
 
