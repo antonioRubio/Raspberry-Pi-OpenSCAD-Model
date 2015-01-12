@@ -145,7 +145,7 @@ module sd_slot() {
 module sd ()
 	{
 	
-	slot();
+	sd_slot();
 
 	color ([.2,.2,.7])
 	translate ([-17.3,17.7,-2.9])
