@@ -233,7 +233,7 @@ module led_group(offset_x, size) {
 	offset = offset_x;
 	for(i = [1:size]) {
 		offset = offset + SPACER;
-		positioned_led();
+		positioned_led(offset);
 	}
 }
 
