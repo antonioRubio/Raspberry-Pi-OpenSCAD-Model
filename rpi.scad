@@ -127,9 +127,9 @@ module hdmi ()
 
 module power ()
 	{
-	color("silver")
-	translate ([-0.8,3.8,HEIGHT])
-	cube ([5.6, 8,4.4-HEIGHT]);
+	color(METALLIC)
+		translate ([-0.8,3.8,HEIGHT])
+			cube ([5.6, 8,4.4-HEIGHT]);
 	}
 
 module sd ()
