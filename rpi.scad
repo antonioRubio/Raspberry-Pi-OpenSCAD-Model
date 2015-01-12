@@ -202,7 +202,6 @@ module pcb () {
 module first_led_group(offset_x) {
 	color(RED)
 		positioned_led(offset_x);
-		// pwr
 	color(RED)
 		positioned_led(offset_x + SPACER);
 }
