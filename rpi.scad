@@ -199,10 +199,6 @@ module pcb () {
 		}
 	}
 
-module first_led_group(offset_x) {
-	led_group(offset_x, 2);
-}
-
 module second_led_group(offset_x) {
 	led_group(offset_x, 3);
 }
