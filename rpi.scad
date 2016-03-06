@@ -16,12 +16,12 @@ LEFT = [-90, 0, 0];
 TILT = [0, 0, 180];
 
 METALLIC = "silver";
-CHROME = [.9,.9,.9];
-BLUE = [.4,.4,.95];
+CHROME = [.9, .9, .9];
+BLUE = [.4, .4, .95];
 BLACK = [0, 0, 0];
-BLUE = [.2,.2,.7];
-DARK_GREEN = [0.2,0.5,0];
-RED = [0.9,0.1,0,0.6];
+BLUE = [.2, .2,.7];
+DARK_GREEN = [0.2, 0.5, 0];
+RED = [0.9, 0.1, 0, 0.6];
 
 ETHERNET_LENGTH = 21.2;
 ETHERNET_WIDTH = 16;
@@ -43,32 +43,39 @@ module ethernet_port() {
 			cube(ETHERNET_DIMENSIONS);
 }
 
+
 module usb_port() {
-	ledge = 8.5;
-	offset_y = 25;
+	ledge = 7.8;
+    offset_port = [offset_x(ledge, USB_LENGTH), 25, HEIGHT];
+    
 	color(METALLIC)
-		translate([offset_x(ledge, USB_LENGTH), offset_y, HEIGHT])
+		translate(offset_port)
 			cube(USB_DIMENSIONS);
-	}
+}
 
 module composite_block() {
+    dimensions = [10, 10, 13];
+    
 	color("yellow")
-		cube([10,10,13]);
+		cube(dimensions);
 }
 
 
 module composite_jack() {
-	translate([5,19,8])
+    offset_jack = [5, 19, 8];
+    
+	translate(offset_jack)
 		rotate(RIGHT)
 			color(CHROME)
-				cylinder(h = 9.3, r = 4.15, $fs=FINE);
+				cylinder(h=9.3, r=4.15, $fs=FINE);
 }
 
 module composite_port() {
-	offset_x = 41.4;
 	pcb_margin = 12;
 	offset_y = WIDTH - pcb_margin;
-	translate([offset_x, offset_y, HEIGHT]) {
+    offset_port = [41.4, offset_y, HEIGHT];
+    
+	translate(offset_port) {
 		composite_block();
 		composite_jack();
 	}
@@ -78,10 +85,7 @@ function half(dimension) = dimension / 2;
 function radius(diameter) = half(diameter);
 
 module audio_block() {
-	length = 12.1;
-	width = 11.5;
-	height = 10.1;
-	dimensions = [length, width, height];
+	dimensions = [12.1, 11.5, 10.1];
 
 	color(BLUE)
 		cube(dimensions);
@@ -98,7 +102,7 @@ module audio_connector() {
 	translate(offset_for_jack)
 		rotate(LEFT)
 			color(BLUE)
-				cylinder(h = 3.5, r = radius, $fs=FINE);
+				cylinder(h=3.5, r=radius, $fs=FINE);
 }
 
 module audio_jack() {
@@ -110,54 +114,50 @@ module audio_jack() {
 	}
 }
 
-module gpio() {
-	offset_x = -1;
-	offset_y = -50;
-	offset = [offset_x, offset_y, HEIGHT];
+module gpio_port() {
+	offset_port = [-1, -50, HEIGHT];
 
 	rotate(TILT)
-		translate(offset)
-			off_pin_header(rows = 13, cols = 2);
+		translate(offset_port)
+			off_pin_header(rows=13, cols=2);
 }
 
-module hdmi() {
-	offset_x = 37.1;
-	dimensions = [15.1, 11.7, 8 - HEIGHT];
-	offset_y = -1;
+module hdmi_port() {
+    offset_port = [37.1, -1, HEIGHT];
+    dimensions = [15.1, 11.7, 8 - HEIGHT];
 
-	color (METALLIC)
-		translate ([offset_x, offset_y,HEIGHT])
+	color(METALLIC)
+		translate(offset_port)
 			cube(dimensions);
 }
 
 module power() {
-	offset_x = -0.8;
-	offset_y = 3.8;
+    offset_power = [-0.8, 3.8, HEIGHT];
 	dimensions = [5.6, 8, 4.4 - HEIGHT];
 
 	color(METALLIC)
-		translate ([offset_x, offset_y, HEIGHT])
-			cube (dimensions);
+		translate(offset_power)
+			cube(dimensions);
 }
 
 module sd_slot() {
-	slot_height = 5.2;
+    slot_height = 5.2;
 	offset_z = ((slot_height + 1) * NEGATIVE_FACTOR) + HEIGHT;
-	offset = [0.9, 15.2, offset_z];
+	offset_slot = [0.9, 15.2, offset_z];
 	dimensions = [16.8, 28.5, slot_height];
 
-	color (BLACK)
-		translate (offset)
-			cube (dimensions);
+	color(BLACK)
+		translate(offset_slot)
+			cube(dimensions);
 }
 
 module sd_card() {
-	offset = [-17.3, 17.7, -2.9];
+	offset_card = [-17.3, 17.7, -2.9];
 	dimensions = [32, 24, 2];
 
-	color (BLUE)
-		translate (offset)
-			cube (dimensions);
+	color(BLUE)
+		translate(offset_card)
+			cube(dimensions);
 }
 
 module sd() {
@@ -167,18 +167,20 @@ module sd() {
 
 function twenty_per_cent(value) = value * .2;
 
-module mhole () {
-	cylinder (r=1.5, h=HEIGHT + twenty_per_cent(HEIGHT), $fs=FINEST);
+module mhole() {
+    height_hole = HEIGHT + twenty_per_cent(HEIGHT);
+    
+	cylinder(r=1.5, h=height_hole, $fs=FINEST);
 }
 
 module integrated_circuit() {
 	color(DARK_GREEN)
-		linear_extrude(height = HEIGHT)
-			square([LENGTH,WIDTH]);
+		linear_extrude(height=HEIGHT)
+			square([LENGTH, WIDTH]);
 }
 
 module holes() {
-	positions = [[25.5, 18,-0.1], [LENGTH-5, WIDTH-12.5, -0.1]];
+	positions = [[25.5, 18,-0.1], [LENGTH - 5, WIDTH - 12.5, -0.1]];
 	number_of_holes = len(positions);
 
 	for(i = [0:number_of_holes + ARRAY_BASE_CORRECTION]) {
@@ -187,8 +189,8 @@ module holes() {
 	}
 }
 
-module pcb () {
-	difference () {
+module pcb() {
+	difference() {
 		integrated_circuit();
 		holes();
 	}
@@ -196,42 +198,47 @@ module pcb () {
 
 module leds() {
 	offset_x = LENGTH - 11.5;
-	led_group(offset_x, 2);
 	second_position = offset_x + SPACER + GROUP_SPACER;
+    
+    led_group(offset_x, 2);
 	led_group(second_position, 3);
 }
 
 module positioned_led(offset_x) {
 	dimensions = [1.0, 1.6, 0.7];
 	offset_y = WIDTH - 7.55;
+    offset_led = [offset_x, offset_y, HEIGHT];
 
-	translate([offset_x,offset_y,HEIGHT])
+	translate(offset_led)
 		color(RED)
 			cube(dimensions);
 }
 
 module led_group(offset_x, size) {
-	offset = offset_x - SPACER;
-	for(i = [1:size]) {
-		positioned_led(offset + (SPACER * i));
+	offset_group = offset_x - SPACER;
+    
+	for(i = [1 : size]) {
+		positioned_led(offset_group + (SPACER * i));
 	}
 }
 
 module led() {
-	cube([1.0,1.6,0.7]);
+    dimensions = [1.0, 1.6, 0.7];
+    
+	cube(dimensions);
 }
 
-module rpi () {
-	pcb ();
-	ethernet_port ();
-	usb_port ();
-	composite_port ();
-	audio_jack ();
-	gpio ();
-	hdmi ();
-	power ();
-	sd ();
-	leds ();
+module rpi() {
+	pcb();
+	ethernet_port();
+	usb_port();
+    composite_port();
+	audio_jack();
+	gpio_port();
+	hdmi_port();
+	power();
+	sd();
+	leds();
 }
 
-rpi ();
+rpi();
